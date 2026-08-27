@@ -1,0 +1,57 @@
+*{
+    margin: 5px;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+
+
+.intro{
+    text-align: center;
+
+}
+
+
+img{
+    width: 350px;
+    height: 350px;
+}
+
+input{
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    width: 150px;
+    height: 50px;
+    cursor: pointer;
+}
+
+button{
+    width: 130px;
+    height: 30px;
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+    cursor: pointer;
+ 
+}
+
+p{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+table{
+    border: 1px, solid black;
+    width: 500px;
+    height: 35px;
+    border-radius: 5px;
+}
