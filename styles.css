@@ -5,34 +5,62 @@
     
 }
 
+
+.menu{
+    background-color: #ad0c8c;
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+}
+
+.menu a{
+    color: white;
+    text-decoration: none;
+    margin: 0 7px;
+    padding: 9px 12px;
+    display: inline-block;
+    border-radius: 5px;
+}
+
+.menu a:hover{
+    background-color: #ba49a4;
+    color: white;
+}
+
+.textos p{
+    color: black;
+}
+
+.conteudo{
+    width: 1000px;
+    margin: 90px auto 0;
+    background-color: #e8eef5;
+    border: 2px solid #ad0c8c;
+    border-radius: 8px;
+    overflow: visible;
+    
+}
+
+.conteudo p{
+    margin: 10px;
+    
+}
+
+.conteudo h1{
+    color: #ad0c8c;
+}
+
+.conteudo h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    color: #ad0c8c;
+}
+
 .Pag{
     margin: 10px;
 }
-
-.biografia-detalhada {
-    width: 100%;
-    margin: 90px 0 0;
-    background-color: #e8eef5;
-    border: 2px solid #172554;
-    border-radius: 8px;
-    overflow: visible;
-}
-
-.biografia-detalhada .cabecalho {
-    background-color: #172554;
-    color: white;
-    text-align: center;
-}
-
-.biografia-detalhada nav {
-    text-align: center;
-}
-
-.biografia-detalhada main {
-    margin: 25px auto;
-    padding-bottom: 30px;
-}
-
 
 
 .intro{
@@ -41,9 +69,42 @@
 }
 
 
-img{
-    width: 350px;
-    height: 350px;
+.imagens{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.imagens img{   
+    width: 300px;
+    height: 330px;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 4px solid #ad0c8c;
+    text-align: right;
+    
+}
+
+.imagens p{
+    flex: 1;
+    font-size: 14px;
+    margin-top: 6px;    
+    text-align: left;
+    align-self: flex-start;
+}
+
+.curiosidades{
+    border: 1px, solid #ce5cb7;
+    width: 800px;
+    height: 35px;
+    border-radius: 5px;
+}
+
+
+.contribuicoes li{
+    color: #ad0c8c;
 }
 
 input{
@@ -51,24 +112,47 @@ input{
     display: flex;
     flex-direction: column;
     margin-bottom: 20px;
+    height: 500px;
+    width: 500px;
     
+}
+
+input[type="text"], input[type="email"]{
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+
+input[type="text"]:hover, input[type="email"]:hover{
+    border: 2px solid #ce5cb7;
+    background-color: #f8f4f7;
+    cursor: pointer;
 }
 
 form{
     display: flex;
+    
     flex-direction: column;
     width: 150px;
-    height: 50px;
+    height: 200px;
     cursor: pointer;
 }
 
 button{
-    width: 130px;
-    height: 30px;
+    width: 150px;
+    height: 50px;
     border-radius: 10px;
     background-color: rgb(255, 255, 255);
     cursor: pointer;
- 
+
+}
+
+select{
+    width: 100px;
+    height: 300px;
+    border-radius: 2px;
+    background-color: rgb(255, 255, 255);
+    cursor: pointer;
 }
 
 p{
@@ -77,12 +161,6 @@ p{
     margin-bottom: 20px;
 }
 
-.curiosidades{
-    border: 1px, solid black;
-    width: 500px;
-    height: 35px;
-    border-radius: 5px;
-}
 
 
 
@@ -114,6 +192,39 @@ header {
     color: white;
     text-align: center;
 }
+
+.biografia-detalhada {
+    width: 100%;
+    margin: 90px 0 0;
+    background-color: #e8eef5;
+    border: 2px solid #ad0c8c;
+    border-radius: 8px;
+    overflow: visible;
+}
+
+
+
+.biografia-detalhada .cabecalho {
+    background-color: #172554;
+    color: white;
+    text-align: center;
+}
+
+
+.biografia-detalhada nav {
+    text-align: center;
+}
+
+.biografia-detalhada main {
+    margin: 25px auto;
+    padding-bottom: 30px;
+}
+
+.biografia-detalhada section p {
+    display: block;
+    text-align: left;
+}
+   
 
 .cabecalho {
     padding: 35px 20px;
