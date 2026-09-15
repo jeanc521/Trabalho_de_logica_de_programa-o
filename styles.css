@@ -5,14 +5,20 @@
     
 }
 
-
+/*Nav com fixelção das opções de cada função feita no codigo, cor, tamanho, e objetivo */
 .menu{
+    top: 0%;
+    padding: 15px;
+    left: 0%;
+    width: 100%;
     background-color: #ad0c8c;
     display: flex;
     justify-content: center;
-    align-items: center;   
+    align-items: center;  
+    position: fixed;
+    
 }
-
+/*Estilisação da referencia do nav, para mudar quando o mopouse passar por cima e mudar de cor */
 .menu a{
     color: white;
     text-decoration: none;
@@ -38,6 +44,7 @@
     border: 2px solid #ad0c8c;
     border-radius: 8px;
     overflow: visible;
+    box-shadow: 10px solid black;
     
 }
 
@@ -56,6 +63,8 @@
     align-items: center;
     margin: 10px;
     color: #ad0c8c;
+    border-bottom: 2px solid #ad0c8c;
+    padding-bottom: 8px;
 }
 
 .Pag{
@@ -102,10 +111,10 @@
     border-radius: 5px;
 }
 
-
-.contribuicoes li{
+.contribuicoes li::marker{
     color: #ad0c8c;
 }
+
 
 input{
     border-radius: 5px;
@@ -114,13 +123,19 @@ input{
     margin-bottom: 20px;
     height: 500px;
     width: 500px;
+    box-shadow: 20px, black;
     
+}
+
+input::placeholder{
+    opacity: 5;
 }
 
 input[type="text"], input[type="email"]{
     border-radius: 10px;
     background-color: rgb(255, 255, 255);
     cursor: pointer;
+    padding-left: 20px;
 }
 
 input[type="text"]:hover, input[type="email"]:hover{
@@ -130,22 +145,28 @@ input[type="text"]:hover, input[type="email"]:hover{
 }
 
 form{
-    display: flex;
-    
+    display: flex; 
     flex-direction: column;
     width: 150px;
     height: 200px;
     cursor: pointer;
 }
 
-button{
+button {
     width: 150px;
-    height: 50px;
+    height: 45px;
     border-radius: 10px;
-    background-color: rgb(255, 255, 255);
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    border: none;
     cursor: pointer;
-
+    margin-top: 20px;
 }
+
+button:hover{
+    background-color: #d092c3;
+}
+
 
 select{
     width: 100px;
